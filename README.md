@@ -14,3 +14,5 @@ P1 - Based on height adaptation, suitable for the vast majority of situations. �
 P2 - Compatibility baseline based on circular screen. 基于圆形屏幕的兼容性底线 
 
 P3 - Devoted to point-to-point and maximum overlap design. 致力于点对点和最大重叠设计 
+
+详细使用样例请阅读zaui.js内注释
