@@ -1,7 +1,7 @@
 /**
  * zaui.js
  * @description A library for providing a simple adaptive UI in ZeppOS 一个用于在ZeppOS中提供简单自适应UI的库
- * @version 0.2.0
+ * @version 0.3.0
  * @date 2024/08/12
  * @author ZHAO
  * @license MIT
@@ -100,4 +100,25 @@ export function ph3(h) {
 export function pl3(l) {
     l1 = l * pxw1;
     return (l1);
+}
+
+
+
+import { getAppWidgetSize } from '@zos/ui'
+
+const { w,margin } = getAppWidgetSize()
+//PW - 适用于副屏小组件的自适应UI函数
+const pww0 = w / 400
+
+export function pww(x) {
+    zx = margin + x * pww0;
+    return (zx);
+}
+export function phw(x) {
+    zx = x * pww0;
+    return (zx);
+}
+export function plw(x) {
+    zx = x * pww0;
+    return (zx);
 }

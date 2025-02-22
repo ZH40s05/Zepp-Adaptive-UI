@@ -1,7 +1,7 @@
 # Zepp-Adaptive-UI
 一个简单的ZeppOS自适应UI库
 
-![图片](https://github.com/ZH40s05/Zepp-Adaptive-UI/blob/main/assets/DesignReference.png?raw=true "ZAUI")
+![图片](https://github.com/ZH40s05/Zepp-Adaptive-UI/blob/main/assets/DesignReference.png?raw=true "ZAUI-DesignReference")
 
 ## 说明 
 
