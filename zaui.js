@@ -1,9 +1,9 @@
 /**
  * zaui.js
  * @description A library for providing a simple adaptive UI in ZeppOS 一个用于在ZeppOS中提供简单自适应UI的库
- * @version 0.3.0
- * @date 2024/08/12
- * @author ZHAO
+ * @version 0.5.0
+ * @date 2026/02/01
+ * @author ZHAO Charlie_Q
  * @license MIT
  *
  * @class ZeppOS Adaptive UI
@@ -12,10 +12,11 @@
  * P1 - Based on height adaptation, suitable for the vast majority of situations. 基于高度适应，适用于绝大多数情况
  * P2 - Compatibility baseline based on circular screen. 基于圆形屏幕的兼容性底线
  * P3 - Devoted to point-to-point and maximum overlap design. 致力于点对点和最大重叠设计
+ * PWW - Adaptive UI function suitable for secondary screen widgets. 适用于副屏小组件的自适应UI函数
  * @example 
- * import { pw,ph,pl } from "../utils/zaui"
+ * import { pww,ph,pl } from "../utils/zaui"
  * createWidget(widget.TEXT, {
- *    x: pw(0),
+ *    x: pww(0),
  *    y: ph(18),
  *    w: pl(480),
  *    h: pl(27),
@@ -107,14 +108,18 @@ export function pl3(l) {
 import { getAppWidgetSize } from '@zos/ui'
 
 const { w,margin } = getAppWidgetSize()
-//PW - 适用于副屏小组件的自适应UI函数
+//PWW - Adaptive UI function suitable for secondary screen widgets. 适用于副屏小组件的自适应UI函数
 const pww0 = w / 400
 
-export function pww(x) {
+export function pww(x) {//卡片内相对x坐标用
     zx = margin + x * pww0;
     return (zx);
 }
-export function phw(x) {
+export function pww2(x) {//480尺寸屏幕上绝对x坐标用
+    zx = margin + (x - 40) * pww0;
+    return (zx);
+}
+export function phw(x) {//phw和plw通用  phw为兼容性保留  均根据宽度缩放
     zx = x * pww0;
     return (zx);
 }
