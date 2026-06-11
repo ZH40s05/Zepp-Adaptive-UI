@@ -3,6 +3,25 @@
 
 ![图片](https://github.com/ZH40s05/Zepp-Adaptive-UI/blob/main/assets/DesignReference.png?raw=true "ZAUI-DesignReference")
 
+## 安装
+
+```bash
+# pnpm（推荐）
+pnpm add @zh40s05/zepp-adaptive-ui
+
+# npm
+npm install @zh40s05/zepp-adaptive-ui
+
+# 或手动复制
+cp zaui.js your-app/utils/zaui.js
+```
+
+## 使用
+
+```js
+import { pw, pl } from '../utils/zaui'
+```
+
 ## 说明 
 
 Provides adaptive UI methods based on three different approaches. 提供了基于三种不同思路的自适应UI方式 
