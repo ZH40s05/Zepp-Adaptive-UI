@@ -1,0 +1,28 @@
+{
+  "name": "@zh40s05/zepp-adaptive-ui",
+  "version": "0.3.1",
+  "description": "ZeppOS 自适应 UI 库 — 四种屏幕适配策略 / Adaptive UI with 4 scaling strategies",
+  "main": "zaui.js",
+  "files": [
+    "zaui.js",
+    "assets/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZH40s05/Zepp-Adaptive-UI.git"
+  },
+  "keywords": [
+    "ZeppOS",
+    "ui",
+    "adaptive",
+    "scaling",
+    "watch",
+    "Amazfit"
+  ],
+  "author": "ZHAO",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZH40s05/Zepp-Adaptive-UI/issues"
+  },
+  "homepage": "https://github.com/ZH40s05/Zepp-Adaptive-UI#readme"
+}

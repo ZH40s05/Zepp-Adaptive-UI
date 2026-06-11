@@ -1,6 +1,6 @@
 /**
- * zaui.js — ZeppOS Adaptive UI Library
- * ZeppOS 自适应 UI 库
+ * zaui.js — ZeppOS 自适应 UI 库
+ * ZeppOS Adaptive UI Library
  *
  * @version 0.3.1
  * @date    2024/08/12 (original), 2026/06/11 (docs update)
